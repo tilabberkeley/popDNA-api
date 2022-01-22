@@ -2,14 +2,16 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-const Docs = () => {
+const NotFound = () => {
     return (
         <div>
-            <Navbar tab="docs"/>
+            <Navbar />
 
+            Not Found
+            
             <Footer />
         </div>
     )
 }
 
-export default Docs
+export default NotFound

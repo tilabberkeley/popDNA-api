@@ -2,14 +2,14 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-const Docs = () => {
+const Login = () => {
     return (
         <div>
-            <Navbar tab="docs"/>
-
-            <Footer />
+            <Navbar tab="login"/>
+            Login
+            <Footer />       
         </div>
     )
 }
 
-export default Docs
+export default Login

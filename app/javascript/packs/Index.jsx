@@ -4,19 +4,27 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from '../components/Home'
 import Docs from '../components/Docs'
+import Login from '../components/Login'
+import Signup from '../components/Signup'
+import NotFound from '../components/NotFound'
 import 'foundation-sites/dist/css/foundation.min.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <BrowserRouter>
+    <Router forceRefresh={true}>
         <Routes>
+          
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/docs" element={< Docs />} />
+          <Route exact path="/docs" element={<Docs />} />
+          <Route exact path="/login" element={<Login />}></Route>
+          <Route exact path="/signup" element={<Signup />}></Route>
+          <Route path="*" element={<NotFound />} />
+          
         </Routes>
-    </BrowserRouter>,
+    </Router>,
     document.body.appendChild(document.createElement('div')),
   )
 })
