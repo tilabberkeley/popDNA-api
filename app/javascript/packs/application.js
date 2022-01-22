@@ -12,10 +12,6 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-//= require foundation
-$(document).on('turbolinks:load', function() {
-    $(function(){ $(document).foundation(); });
-});
 // Support component names relative to this directory:
 var componentRequireContext = require.context("components", true);
 var ReactRailsUJS = require("react_ujs");
