@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from '../components/Home'
 import Docs from '../components/Docs'
+import 'foundation-sites/dist/css/foundation.min.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
