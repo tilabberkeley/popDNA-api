@@ -11,6 +11,17 @@ import Login from '../components/Login'
 import Signup from '../components/Signup'
 import NotFound from '../components/NotFound'
 import 'foundation-sites/dist/css/foundation.min.css';
+import $ from 'jquery';
+import 'what-input';
+
+
+window.jQuery = $;
+require('foundation-sites');
+
+$(document).on('turbolinks:load', function() {
+  $(function(){ $(document).foundation(); });
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(

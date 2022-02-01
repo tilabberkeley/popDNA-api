@@ -4006,7 +4006,7 @@
     "merge-stream" "^2.0.0"
     "supports-color" "^7.0.0"
 
-"jquery@>=2.2.0", "jquery@>=3.6.0":
+"jquery@^3.6.0", "jquery@>=2.2.0", "jquery@>=3.6.0":
   "integrity" "sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw=="
   "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz"
   "version" "3.6.0"
@@ -4454,7 +4454,7 @@
   "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   "version" "1.0.4"
 
-"motion-ui@latest":
+"motion-ui@^2.0.3", "motion-ui@latest":
   "integrity" "sha512-f9xzh/hbZTUYjk4M7y1aDcsiPTfqUbuvCv/+If05TSIBEJMu3hGBU+YSe9csQPP7WBBHXxjossEygM/TJo2enw=="
   "resolved" "https://registry.npmjs.org/motion-ui/-/motion-ui-2.0.3.tgz"
   "version" "2.0.3"
@@ -5836,6 +5836,11 @@
     "iconv-lite" "0.4.24"
     "unpipe" "1.0.0"
 
+"raw-loader@~0.5.1":
+  "integrity" "sha1-DD0L6u2KAclm2Xh793goElKpeao="
+  "resolved" "https://registry.npmjs.org/raw-loader/-/raw-loader-0.5.1.tgz"
+  "version" "0.5.1"
+
 "react_ujs@^2.6.0", "react_ujs@^2.6.1":
   "integrity" "sha512-9M33/A8cubStkZ2cpJSimcTD0RlCWiqXF6e90IQmMw/Caf/W0dtAzOtHtiQE3JjLbt/nhRR7NLPxMfnlm141ig=="
   "resolved" "https://registry.npmjs.org/react_ujs/-/react_ujs-2.6.1.tgz"
@@ -6219,6 +6224,13 @@
     "@types/json-schema" "^7.0.8"
     "ajv" "^6.12.5"
     "ajv-keywords" "^3.5.2"
+
+"script-loader@^0.7.2":
+  "integrity" "sha512-UMNLEvgOAQuzK8ji8qIscM3GIrRCWN6MmMXGD4SD5l6cSycgGsCo0tX5xRnfQcoghqct0tjHjcykgI1PyBE2aA=="
+  "resolved" "https://registry.npmjs.org/script-loader/-/script-loader-0.7.2.tgz"
+  "version" "0.7.2"
+  dependencies:
+    "raw-loader" "~0.5.1"
 
 "select-hose@^2.0.0":
   "integrity" "sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo="
